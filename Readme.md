@@ -185,7 +185,7 @@ Validações automáticas:
 
 ## 🔵 ETAPA 1 — Preparação do Ambiente (2h)
 
-1.1 **Instalar ferramentas**
+1.1 **Instalar ferramentas** ✅
 
 Você precisa ter:
 
@@ -209,10 +209,10 @@ node -v
 
 1.2 **Criar contas necessárias**
 
-- GitHub
-- Render (para backend)
-- Railway (para MySQL)
-- Vercel (frontend futuro)
+- GitHub ✅
+- Render (para backend) ✅
+- Railway (para MySQL) ✅
+- Vercel (frontend futuro) ✅  
 - AWS (opcional)
 
 1.3 **Criar banco local**
