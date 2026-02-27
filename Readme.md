@@ -223,7 +223,7 @@ CREATE DATABASE ecommerce_tennis;
 
 Configurar `.env` com credenciais e testar conexão.
 
-## 🔵 ETAPA 2 — Setup do Projeto Laravel (1h)
+## 🔵 ETAPA 2 — Setup do Projeto Laravel (1h) ✅  
 
 ```bash
 composer create-project laravel/laravel ecommerce-tennis
@@ -237,7 +237,7 @@ php artisan serve
 
 Testar se o servidor sobe. Commit inicial.
 
-## 🔵 ETAPA 3 — Modelagem (2h)
+## 🔵 ETAPA 3 — Modelagem (2h) ✅  
 
 - Criar migrations para: `products`, `product_sizes`, `orders`, `order_items`.
 - Definir chaves estrangeiras e índices (brand, name).
@@ -249,7 +249,7 @@ Testar se o servidor sobe. Commit inicial.
 
 - Criar models e relações; testar via `php artisan tinker`. Commit.
 
-## 🔵 ETAPA 4 — Seeders (1h)
+## 🔵 ETAPA 4 — Seeders (1h) ✅  
 
 - Criar `ProductSeeder` e `ProductSizeSeeder`.
 - Inserir 10 produtos e tamanhos realistas.
@@ -261,7 +261,7 @@ Testar se o servidor sobe. Commit inicial.
 
 - Verificar no banco. Commit.
 
-## 🔵 ETAPA 5 — API Produtos (2h)
+## 🔵 ETAPA 5 — API Produtos (2h) ✅  
 
 - Criar `ProductController`.
 - Implementar:

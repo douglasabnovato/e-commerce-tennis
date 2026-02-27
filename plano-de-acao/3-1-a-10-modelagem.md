@@ -1,4 +1,5 @@
 🔵 ETAPA 3 — MODELAGEM COMPLETA
+
 🟢 PASSO 1 — Criar Migrations ✅
 
 Vamos criar cada tabela separadamente.
@@ -169,23 +170,71 @@ public function product()
     return $this->belongsTo(Product::class);
 }
 
-🟢 PASSO 9 — Testar no Tinker  
+🟢 PASSO 9 — Testar no Tinker ✅  
 
 Execute:
 
+Entrar no Tinker
 php artisan tinker
+
+Importar o Model
+use App\Models\Product;
+
+Criar o produto:
+
+Product::create([
+    'name' => 'Air Zoom Test',
+    'brand' => 'Nike',
+    'category' => 'Running',
+    'price' => 799.90,
+    'discount_price' => 699.90,
+    'stock' => 20,
+    'material' => 'Mesh',
+    'weight' => 250,
+    'technology' => 'Air Zoom',
+    'usage_type' => 'Corrida',
+    'release_year' => 2024,
+    'sku' => 'NIKE-AIR-TEST-001'
+]);
 
 Teste:
 
-Product::create([
-    'name' => 'Teste',
-    'brand' => 'Nike',
-    'price' => 100,
-    'stock' => 10,
-    'sku' => 'TEST-001'
-]);
+Product::first();
 
-Se criar registro → sucesso.
+Resposta:
+
+= App\Models\Product {#4693
+    id: 1,
+    name: "Air Zoom Test",
+    brand: "Nike",
+    category: "Running",
+    price: "799.90",
+    discount_price: "699.90",
+    stock: 20,
+    material: "Mesh",
+    weight: 250,
+    technology: "Air Zoom",
+    usage_type: "Corrida",
+    release_year: "2024",
+    sku: "NIKE-AIR-TEST-001",
+    image: null,
+    description: null,
+    history: null,
+    nba_minutes_played: null,
+    created_at: "2026-02-27 13:13:40",
+    updated_at: "2026-02-27 13:13:40",
+  }
+
+
+✅ O QUE ESTÁ CORRETO
+
+✔ Registro salvo no banco
+✔ Auto increment funcionando
+✔ Timestamps automáticos funcionando
+✔ Campos nullable funcionando
+✔ SKU persistido
+✔ Estrutura da migration coerente
+✔ Model + fillable corretos
 
 🟢 PASSO 10 — Commit Profissional ✅
 
